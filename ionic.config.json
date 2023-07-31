@@ -1,0 +1,7 @@
+{
+  "name": "Space Launch Schedule",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
