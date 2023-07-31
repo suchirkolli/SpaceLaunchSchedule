@@ -1,0 +1,100 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+/* Custom styles for the rocket image */
+.rocket-image {
+  max-width: 100%; /* Ensure the image does not exceed its container width */
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* Custom styles for the rocket details */
+.rocket-details {
+  padding: 10px; /* Adjust the padding as needed for spacing */
+}
+
+/* Custom styles for the rocket name */
+.rocket-name {
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+/* Custom styles for the rocket info */
+.rocket-info {
+  font-size: 16px; /* Adjust the font size as needed */
+  margin-top: 5px; /* Adjust the margin as needed for spacing between info items */
+}
+
+/* Custom styles for the rocket row */
+ion-row {
+  border-bottom: 1px solid #ccc; /* Add a 1px solid line at the bottom of each row */
+  margin-bottom: 10px;
+}
+
+/* Custom styles for the last rocket row */
+ion-row:last-child {
+  border-bottom: none; /* Remove the border from the last row to avoid extra line at the end */
+}
+
+
+/* Custom styles for the search bar */
+.search-bar {
+  position: fixed;
+  z-index: 999; /* Set a high z-index to ensure it's above other elements */
+  
+}
+
+.logo-image {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 8px; /* Add some spacing between the logo and the title */
+}
+
+
+
+
+.contain{
+  padding-top: 66px;
+}
+
+ion-searchbar {
+  position: sticky;
+  
+  z-index: 1;
+
+}
+
+.map-logo {
+  max-width: 20px; /* Adjust the maximum width of the map logo as needed */
+  max-height: 20px; /* Adjust the maximum height of the map logo as needed */
+}
+
+ion-title{
+  padding-inline: 7px;
+  font-size: 18px;
+}
