@@ -1,0 +1,28 @@
+/* Custom button style */
+.menu-button1 {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff; /* Adjust the color as needed */
+    text-decoration: none; /* Remove hyperlink underline */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: 1px solid #fff; /* Add a border to make it look like a button */
+    border-radius: 4px; /* Add rounded corners for a button-like appearance */
+    transition: background-color 0.3s ease; /* Add transition for a smooth effect */
+  }
+  
+  /* Add hover effect to the button */
+  .menu-button1:hover {
+    background-color: #fff; /* Adjust the background color on hover */
+    color: #333; /* Adjust the color on hover */
+  }
+  
+  /* app.component.scss */
+
+/* app.component.scss */
+
+/* Apply the curved background to the side menu */
+
+.menu-inner {
+    border-radius: 0 1.7rem 1.7rem 0!important;
+  }
+  

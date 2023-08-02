@@ -1,0 +1,18 @@
+<ion-list class="custom-dropdown">
+  <ion-list-header (click)="toggleAccordion()" class="custom-dropdown-header">
+    {{ headerText }}
+    <ion-icon name="chevron-down" *ngIf="!isAccordionExpanded"></ion-icon>
+    <ion-icon name="chevron-up" *ngIf="isAccordionExpanded"></ion-icon>
+  </ion-list-header>
+
+  <ng-container *ngIf="isAccordionExpanded">
+    <ion-item
+      *ngFor="let item of dropdownItems"
+      (click)="onItemClick(item)"
+      class="custom-dropdown-item"
+    >
+      {{ item }}
+    </ion-item>
+  </ng-container>
+</ion-list>
+

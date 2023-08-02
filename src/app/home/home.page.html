@@ -1,20 +1,45 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-button slot="start" (click)="goToMapPage()"><ion-img class="map-logo" src="assets/icon/MAP.png" alt="Map Logo"></ion-img></ion-button>
+    <ion-buttons slot="end" (click)="goToMerchPage()"><ion-img src="assets/icon/monkey.png" alt="Logo" class="logo-image"></ion-img></ion-buttons>
     <ion-title>
-      Blank
+      Space Launch Schedule
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <!-- Hamburger Icon -->
+  
+   
+  
+
+
+<ion-content fullscreen class="custom-content">
+  
+  <ion-searchbar animated="true" placeholder="Search" class="search-bar" (click)="onSearchBarClick()"></ion-searchbar>
+  <!-- Content of the home page -->
+  <div class="contain">
+  <ion-grid>
+    <ion-row *ngFor="let rocket of rockets">
+      <ion-col size="3">
+        <ion-img class="rocket-image" src="path_to_rocket_image.png"></ion-img>
+      </ion-col>
+      <ion-col size="9">
+        <div class="rocket-details">
+          <div class="rocket-name">{{ rocket.name }}</div>
+          <div class="rocket-info">Lab/Station: {{ rocket.labStation }}</div>
+          <div class="rocket-info">Location: {{ rocket.location }}</div>
+          <div class="rocket-info">Status: {{ rocket.status }}</div>
+          <div class="rocket-info">Launch Date: {{ rocket.launchDate }}</div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
 </ion-content>
+

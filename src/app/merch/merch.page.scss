@@ -1,0 +1,89 @@
+/* Custom styles for the captions */
+.caption {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust the margin as needed to create space between the caption and other elements */
+    font-weight: bold;
+  }
+  /* Custom styles for the grid items */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  
+  
+  /* Custom styles for the "Buy" buttons */
+.buy-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #007bff; /* Blue color for the text */
+    text-decoration: none; /* Remove hyperlink underline */
+    padding: 10px 40px; /* Adjust the padding as needed */
+    border: 2px solid #007bff; /* Blue border for the oval outline */
+    border-radius: 50px; /* Create an oval shape using a large border-radius value */
+    font-weight: bold; /* Optionally make the text bold */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
+  }
+  
+  /* Hover effect for the "Buy" buttons */
+  .buy-button:hover {
+    background-color: #007bff; /* Blue background color on hover */
+    color: #fff; /* White text color on hover */
+  }
+  
+
+  /* Custom styles for the "Buy" buttons */i
+  
+  /* Custom spacing between rows */
+ion-grid {
+    ion-row {
+      margin-bottom: 20px; /* Adjust the value as needed */
+    }
+  }
+  
+  /* Custom styles for the price labels */
+ion-label.price-label {
+    font-size: 18px; /* Adjust the font size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .buy-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Custom styles for the prices */
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.price-label {
+  text-align: center;
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* Custom styles for the captions */
+.caption {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px; /* Adjust the margin as needed to create space between the caption and other elements */
+  margin-bottom: 10px;
+  font-weight: normal;
+  
+}
